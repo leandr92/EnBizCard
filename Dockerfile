@@ -7,4 +7,5 @@ RUN npm run generate
 
 FROM nginx:alpine
 COPY --from=build /app/public /usr/share/nginx/html
+RUN mkdir -p /usr/share/nginx/html/vcard 
 EXPOSE 80
