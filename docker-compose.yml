@@ -8,3 +8,6 @@ services:
     volumes:
       - vcards:/usr/share/nginx/html/vcard
     restart: always
+
+volumes:
+    vcards:
